@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Images</title>
+    <link rel="stylesheet" type="text/css" href="images.css">
+</head>
+<body>
+
+    <div class="linksBack">
+        <a class="returnButton" href="/cs50/project_0/index.html" target="_blank">Google Search</a>
+    </div>
+
+    <div class="container">
+        
+        <div class="gLogo">
+            <img class="googleLogo" src="/staff/google_logo.png">
+            <p class="text">images</p>
+        </div>
+        
+        <div class="bottom">
+            <form class="formContainer" action="https://www.google.com/search" method="get">
+                <input class="input" type="text" name="tbm" value="isch" hidden>
+                <div class="inputWrapper">
+                    <input class="input" type="text" name="q" placeholder="Search Google Images" required>
+                    <input class="button" type="submit" value="Search">
+                </div>
+            </form>
+        </div>
+
+    </div>
+    
+</body>
+</html>

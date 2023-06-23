@@ -1,0 +1,85 @@
+body {
+    background-color: rgb(245, 245, 245);
+}
+.cornerLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    position: fixed;
+    top: 60px;
+    right: 40px;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 25%;
+    left: 30%;
+}
+
+.googleLogo {
+    width: 400px;
+}
+
+.formHolder {
+   padding-top: 15px;
+   padding-bottom: 15px;
+}
+
+.input {
+    border-radius: 25px;
+    border: none;
+    width: 500px;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.button {
+    display: inline-block;
+    padding: 5px 8px;
+    width: 120px;
+
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 3px;
+
+    color: black;
+    transition: 0.07s;
+}
+.button:hover {
+    background-color: rgb(229, 229, 229);
+    border-style: solid;
+    border-width: 0.2px;
+}
+
+.linkToAdvanced,
+.linkToImages {
+    display: inline-block;
+
+    padding: 10px 20px;
+    margin-right: 20px;
+    margin-top: 8px;
+
+    width: 120px;
+    font-size: 16px;
+
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.linkToAdvanced:hover,
+.linkToImages:hover {
+    background-color:  rgb(229, 229, 229);
+}

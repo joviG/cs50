@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Advanced Search</title>
+</head>
+<body>
+  <form action="https://www.google.com/search" method="GET">
+    <label for="all-words">Find pages with... "all these words:"</label><br>
+    <input type="text" id="all-words" name="as_q" required><br>
+
+    <label for="exact-phrase">Find pages with... "this exact word or phrase:"</label><br>
+    <input type="text" id="exact-phrase" name="as_epq" required><br>
+
+    <label for="any-words">Find pages with... "any of these words:"</label><br>
+    <input type="text" id="any-words" name="as_oq" required><br>
+
+    <label for="none-words">Find pages with... "none of these words:"</label><br>
+    <input type="text" id="none-words" name="as_eq" required><br>
+
+    <input type="submit" value="Advanced Search">
+  </form>
+</body>
+</html>

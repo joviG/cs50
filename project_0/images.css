@@ -1,0 +1,103 @@
+body {
+    background-color: beige;
+}
+
+.linksBack {
+    display: flex;
+    justify-content: end;
+
+    right: 40px;
+    top: 50px;
+}
+.returnButton {
+    display: inline-block;
+
+    padding: 10px 20px;
+    margin-right: 40px;
+    margin-top: 20px;
+
+    width: 120px;
+    font-size: 16px;
+
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+.returnButton:hover {
+    background-color: rgb(212, 212, 212);
+}
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input {
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 0.2px;
+    width: 500px;
+
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.input:hover {
+    background-color: rgb(236, 236, 236);
+    border-style: solid;
+    border-width: 0.2px;
+}
+.button {
+    display: inline-block;
+    padding: 5px 8px;
+    margin-top: 15px;
+    width: 90px;
+
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 0.2px;
+    border-radius: 15px;
+
+    color: black;
+    transition: 0.07s;
+}
+.button:hover {
+    background-color: rgb(237, 237, 237);
+    border-style: solid;
+    border-width: 0.2px;
+}
+.gLogo {
+    display: flex;
+    flex-direction: column;
+
+}
+.googleLogo {
+    display: flex;
+    width: 400px;
+}
+.text {
+    display: flex;
+
+    justify-content: right;
+    margin: 0;
+    color: blue;
+
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 120px;
+}

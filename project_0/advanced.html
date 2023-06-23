@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google - Advanced Search</title>
+
+    <link rel="stylesheet" type="text/css" href="advanced.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="google_header_logo">
+            <img class="google_logo" src="/staff/google_logo.png" alt="Google">
+        </div>
+        <div class="turn_back_button_container">
+            <a class="back_button" href="/cs50/project_0/index.html" target="_blank">
+                Google Search
+            </a>
+        </div>
+    </div>
+
+    <div class="title_bar">
+        <div class="title_text">
+            Advanced search
+        </div>
+    </div>
+
+    <div class="line">
+<!-- black, thin line across the page -->
+    </div>
+
+    <div class="front">
+
+        <div class="front-header">
+            <div class="title_left">
+                Find pages containing...
+            </div>
+            <div class="title_middle">
+
+            </div>
+            <div class="title_right">
+                To do this using the searchbox
+            </div>
+        </div>
+
+        <div class="front-body">
+            <form class="form" action="https://www.google.com/search" method="GET" target="_blank">
+                
+                <div class="columns_container">
+                    <div class="left_column">
+                        <div class="filter_title">
+                            all these words:
+                        </div>
+                        <div class="filter_title">
+                            this exact word or phrase:
+                        </div>
+                        <div class="filter_title">
+                            any of these words:
+                        </div>
+                        <div class="filter_title">
+                            none of these words:
+                        </div>
+                    </div>
+        
+                    <div class="middle_column">
+                        <div class="input_div">
+                            <input class="input_field" name="as_q" required>
+                        </div>
+                        <div class="input_div">
+                            <input class="input_field" name="as_epq" required>
+                        </div>
+                        <div class="input_div">
+                            <input class="input_field" name="as_oq" required>
+                        </div>
+                        <div class="input_div">
+                            <input class="input_field" name="as_eq" required>
+                        </div>
+        
+                        <div class="search_button">
+                            <button class="advanced_button">
+                                Advanced search
+                            </button>
+                        </div>
+                    </div>
+    
+                    <div class="right_column">
+                        <div class="filter_examples">
+                            Enter the search words: tricolor rat terrier
+                        </div>
+                        <div class="filter_examples">
+                            Enter the phrase in quotes: "Polish girl"
+                        </div>
+                        <div class="filter_examples">
+                            Put an or between the words you typed: "miniature or regular"
+                        </div>
+                        <div class="filter_examples">
+                            Put a minus sign in front of undesirable words: -rodents, -"terrier"
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
