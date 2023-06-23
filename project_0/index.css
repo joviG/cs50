@@ -1,85 +1,99 @@
-body {
-    background-color: rgb(245, 245, 245);
-}
 .cornerLinks {
     display: flex;
     flex-direction: row;
-    justify-content: end;
-    position: fixed;
-    top: 60px;
-    right: 40px;
-}
-
-.center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    position: fixed;
-    top: 25%;
-    left: 30%;
-}
-
-.googleLogo {
-    width: 400px;
-}
-
-.formHolder {
-   padding-top: 15px;
-   padding-bottom: 15px;
-}
-
-.input {
-    border-radius: 25px;
-    border: none;
-    width: 500px;
-
+    
+    box-sizing: border-box;
+    height: 48px;
+    line-height: normal;
     padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    padding-right: 8px;
+
+    
+    flex: 0 0 auto;
+    justify-content: flex-end;
 }
-
-.button {
-    display: inline-block;
-    padding: 5px 8px;
-    width: 120px;
-
-    background-color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 3px;
-
-    color: black;
-    transition: 0.07s;
-}
-.button:hover {
-    background-color: rgb(229, 229, 229);
-    border-style: solid;
-    border-width: 0.2px;
-}
-
 .linkToAdvanced,
 .linkToImages {
     display: inline-block;
-
-    padding: 10px 20px;
-    margin-right: 20px;
-    margin-top: 8px;
-
-    width: 120px;
-    font-size: 16px;
-
-    background-color: #ffffff;
+    line-height: 24px;
+    vertical-align: middle;
     color: rgb(0, 0, 0);
-
-    border: none;
-    border-radius: 5px;
-    text-align: center;
     text-decoration: none;
+    font-family: 'Roboto', arial, sans-serif;
+    font-size: 13px;
+    padding-right: 15px;
+
+
     cursor: pointer;
 }
-
 .linkToAdvanced:hover,
 .linkToImages:hover {
-    background-color:  rgb(229, 229, 229);
+    text-decoration: underline;
+}
+.nineDotsIcon,
+.personIcon {
+    height: 32px;
+    margin-right: 15px;
+    transition: background-color 0.1s ease;
+}
+.nineDotsIcon:hover,
+.personIcon:hover {
+    background-color: lightgrey;
+    border-radius: 14px;
+    
+}
+.frontContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    m
+    top: 25%;
+    left: 30%;
+}
+.googleLogoImage {
+    width: 400px;
+}
+.searchBarContainer {
+   display: flex;
+   flex-direction: column;
+   
+   align-items: center;
+   
+   
+}
+.inputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.inputBar {
+    
+    width: 500px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+
+    width: 400px;
+    margin-left: 10px;
+    border: none;
+    font-size: 16px;
+}
+.searchIcon {
+    width: 15px;
+}
+.confirmButton {
+    margin-top: 15px;
+    background-color: #4285F4;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.confirmButton:hover {
+    background-color: #2E67D7;
 }

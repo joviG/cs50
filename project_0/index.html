@@ -3,29 +3,36 @@
 <head>
     <title>Google Search</title>
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="center">
-        
-        <div>
-            <img class="googleLogo" src="/staff/google_logo.png" alt="Google">
+    <div class="cornerLinks">
+        <a class="linkToAdvanced" href="/cs50/project_0/advanced.html" target="_blank">Advanced</a>
+        <a class="linkToImages" href="/cs50/project_0/images.html" target="_blank">Images</a>
+        <img class="nineDotsIcon" src="/staff/nineDotsIcon.png" alt="nineDots">
+        <img class="personIcon" src="/staff/personIcon.png" alt="person">
+    </div>
+    <div class="frontContainer">
+        <div class="googleLogoImageContainer">
+            <img class="googleLogoImage" src="/staff/google_logo.png" alt="Google">
         </div>
-
-        <div class="formHolder">
+        
+        <div class="searchBarContainer">
             <form action="https://www.google.com/search">
-                <input class="input" type="text" name="q" placeholder="Search Google or type a URL :D">
+                <div class="inputContainer">
+                    <div class="firstLine">
+                        <img class="searchIcon" src="/staff/searchIcon.png" alt="Search">
+                        <input class="inputBar" type="text" name="q" placeholder="Search Google or type a URL :D">
+                    </div>
+                    <div class="secondLine">
+                        <input class="confirmButton" type="submit" value="Google Search">
+                        <input class="luckyButton" type="button" value="I'm Feeling Lucky" onclick="feelingLucky()">
+                    </div>
+                </div>
             </form>
         </div>
-
-        <div class="submitButton">
-            <input class="button" type="submit" value="Google Search">
-        </div>
-    </div>
-
-    <div class="cornerLinks">
-        <a class="linkToImages" href="/cs50/project_0/images.html" target="_blank">Google Images</a>
-
-        <a class="linkToAdvanced" href="/cs50/project_0/advanced.html" target="_blank">Google Advanced</a>
     </div>
 </body>
 </html>
