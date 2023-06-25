@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Images</title>
     <link rel="stylesheet" type="text/css" href="images.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="linksBack">
+    <div class="linkBackContainer">
         <a class="returnButton" href="/cs50/project_0/index.html" target="_blank">Google Search</a>
     </div>
 
@@ -23,7 +26,7 @@
             <form class="formContainer" action="https://www.google.com/search" method="get">
                 <input class="input" type="text" name="tbm" value="isch" hidden>
                 <div class="inputWrapper">
-                    <input class="input" type="text" name="q" placeholder="Search Google Images" required>
+                    <input class="input" type="text" name="q" placeholder="Search for Google Images" required>
                     <input class="button" type="submit" value="Search">
                 </div>
             </form>
