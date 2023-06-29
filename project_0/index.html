@@ -6,6 +6,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+        function openFirstResult() {
+            let query = document.getElementById('searchQuery').value;
+            let luckyUrl = 'https://www.google.com/search?q=' + encodeURIComponent(query) + '&btnI';
+            window.location.href = luckyUrl;
+        }
+    </script>
 </head>
 <body>
     <div class="cornerLinks">
@@ -21,10 +28,10 @@
         <div class="searchBarContainer">
             <form action="https://www.google.com/search">
                 <div class="inputContainer">
-                    <input class="inputBar" type="text" name="q" placeholder="Search Google or type a URL :D">
+                    <input class="inputBar" type="text" id="searchQuery" name="q" placeholder="Search Google or type a URL :D">
                     <div class="buttonsContainer">
                         <input class="confirmButton" type="submit" value="Google Search">
-                        <input class="luckyButton" type="button" value="I'm Feeling Lucky" onclick="feelingLucky()">
+                        <a href="#" class="luckyButton" onclick="openFirstResult(); return false;">I'm Feeling Lucky</a>
                     </div>
                 </div>
             </form>
